@@ -1,3 +1,5 @@
+import {url, fetchData} from './api.js'
+
 
 // 추상화된 함수 
 /**
