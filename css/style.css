@@ -707,3 +707,40 @@ article.container::before {
 .footer .body-3:last-child {
   gap: 6px;
 }
+
+
+/*-----------------------------------*\
+  #LOADING
+ \*-----------------------------------*/
+
+.loading{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.loading::before{
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--on-background);
+  border-top-color: transparent;
+  border-radius: 100%;
+  animation: loading 0.8s linear infinite;
+}
+
+
+/* 
+.circle{
+  position: fixed;
+  width: 50%;
+  height: 40%;
+  background-color: var(--on-surface);
+  border-radius: 50%;
+} */

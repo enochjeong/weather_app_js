@@ -76,7 +76,8 @@ const currentLocationBtn = document.querySelector(
     );
 
     const container = document.querySelector('[data-container]')
-    
+    const loading = document.querySelector('[data-loading]')
+
 /**
  * Render ALL Weather Data which is fetched from API 
  * 
@@ -93,6 +94,8 @@ export const updateWeather = function(lat, lon) {
     } else{
         currentLocationBtn.removeAttribute('disabled')
     }
+
+loading.style.display = 'flex';
 
     const currentWeatherSection = document.querySelector('[data-current-weather]')
     const forecastSection = document.querySelector('[data-5-day-forecast]')
@@ -379,7 +382,7 @@ class="title-1">${parseInt(feels_like)}&deg;<sup>c</sup></p>
 });
 
 
-
+loading.style.display = 'none';
 });
 };
 
